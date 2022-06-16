@@ -42,13 +42,13 @@ function extension_install_geolocation()
     $commonObject -> sqlQuery(
         "CREATE TABLE geolocation (
         ID INTEGER NOT NULL AUTO_INCREMENT, 
-        IP varchar(12) default null , -- just xxx.xxx.xxx.xxxx needed but never knows XD
-        COUNTRY varchar(120) defautl null,
-        COUNTRYCODE varchar(5) default null, -- only need 3 char 
+        IP varchar(12) default null , 
+        COUNTRY varchar(120) default null,
+        COUNTRYCODE varchar(5) default null,  
         REGION varchar(5) default null,
         REGIONNAME varchar(120) default null,
         CITY varchar(120) default null,
-        ZIP int default null, -- Only numeric zip codes
+        ZIP int default null, 
         LATITUDE decimal(8,6) default null,
         LONGITUDE decimal(9,6) default null,
         TIMEZONE varchar(120) default null
