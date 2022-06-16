@@ -1,0 +1,2 @@
+25632 Plugin Geolocation
+25633 Menu Geolocation

@@ -1,0 +1,13 @@
+{
+  "displayName": "Plugin Geolocation",
+  "author": ["Ambagasdowa"],
+  "contributor": [],
+  "supportedAgent": ["Windows"],
+  "version": "1",
+  "licence": "MIT",
+  "description": {
+    "es": "Plugin de Geoposicionamiento de terminales OCS",
+    "en": "Plugin of Geolocation of OCS Terminals"
+  }
+}
+
