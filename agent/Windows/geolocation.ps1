@@ -36,8 +36,8 @@ $request = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPAddress
     $xml += "<TIMEZONE>" + $request.timezone + "</TIMEZONE>`n"
     $xml += "<ISP>" + $request.isp + "</ISP>`n"
     $xml += "<ORG>" + $request.org + "</ORG>`n"
-    $xml += "<AS>" + $request.as + "</AS>`n"
-    $xml += "<OSM>" + '<a href="https://www.openstreetmap.org/#map=13/'+$request.lat+'/'+$request.lon+'">map</a>' + "</OSM>`n"
+    $xml += "<ASLABEL>" + $request.as + "</ASLABEL>`n"
+    $xml += "<OSMAP>" + '<a href="https://www.openstreetmap.org/#map=13/'+$request.lat+'/'+$request.lon+'">map</a>' + "</OSMAP>`n"
     $xml += "<GOOGLE>" + 'https://www.google.com/maps/@'+ $request.lat + ',' + $request.lon +',15z' + "</GOOGLE>`n"
     $xml += "</GEOLOCATION>`n"
 
