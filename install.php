@@ -42,7 +42,7 @@ function extension_install_geolocation()
     $commonObject -> sqlQuery(
         "CREATE TABLE geolocation (
         ID INTEGER NOT NULL AUTO_INCREMENT, 
-        HARDWARE_ID INTEGER NOT NULL,
+        HARDWARE_ID INTEGER NULL,
         IP VARCHAR(12) DEFAULT NULL , 
         COUNTRY VARCHAR(120) DEFAULT NULL,
         COUNTRYCODE VARCHAR(5) DEFAULT NULL,  
