@@ -43,7 +43,7 @@ function extension_install_geolocation()
         "CREATE TABLE geolocation (
         ID INTEGER NOT NULL AUTO_INCREMENT, 
         HARDWARE_ID INTEGER NULL,
-        IP VARCHAR(12) DEFAULT NULL , 
+        IP VARCHAR(15) DEFAULT NULL , 
         COUNTRY VARCHAR(120) DEFAULT NULL,
         COUNTRYCODE VARCHAR(5) DEFAULT NULL,  
         REGION VARCHAR(5) DEFAULT NULL,
