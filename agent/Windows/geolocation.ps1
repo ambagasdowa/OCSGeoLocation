@@ -68,23 +68,21 @@ Add-Type -AssemblyName System.Web
 
 $IPAddress = (Invoke-WebRequest -uri "icanhazip.com" -UseBasicParsing).Content
 
-$tunnel = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter 'IPEnabled = True'
+#$tunnel = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter 'IPEnabled = True'
 
 $request = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPAddress"
-
-
 
 $osmap = 'https://www.openstreetmap.org/?mlat='+$request.lat+'&mlon='+$request.lon
 $google = 'https://www.google.com/maps/search/?api=1&query='+ $request.lat + ',' + $request.lon
 
+$aosmap='<a href="'+ $osmap +'" target="_blank" rel="noreferrer">OpenStreetMap</a>'
+$agoogle = '<a href="'+ $google +'" target="_blank" rel="noreferrer">GoogleMap</a>' 
 
-#<a href="yourpage.htm" target="_blank" onClick="window.open('yourpage.htm','pagename','resizable,height=600,width=800'); return false;">New Page</a>
 #$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [System.Web.HttpUtility]::UrlEncode($osmap)  +'">OpenStreetMap</a>' )
 #$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [system.Web.HttpUtility]::UrlEncode($google) +'">GMap</a>' )
 
-$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $osmap +'" target="_blank" onClick="window.open('+ $osmap +',"pagename","resizable,height=800,width=600");return false">OpenStreetMap</a>' )
-$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $google +'" target="_blank" onClick="window.open('+$google+',"pagename","resizable,height=800,width=600")">GoogleMap</a>' )
-
+$linkOmap = [System.Web.HttpUtility]::HtmlEncode( $aosmap )
+$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( $agoogle )
 
 
     $xml += "<GEOLOCATION>`n"
@@ -110,26 +108,5 @@ $linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $google +'" tar
 # Force UTF8 enconding
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::WriteLine($xml)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
