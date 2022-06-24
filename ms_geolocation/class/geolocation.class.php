@@ -254,6 +254,10 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
     }
     $opt = false;
     ?>
+    <frameset cols=20%,80%>
+    <frame src="centerside.html" name="centerside">
+    </frameset>
+
 
     <div align=center>
         <div class="<?php echo $option['table_name']; ?>_top_settings" style="display:none;">

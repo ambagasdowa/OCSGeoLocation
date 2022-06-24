@@ -87,8 +87,8 @@ $google = 'https://www.google.com/maps/search/?api=1&query='+ $request.lat + ','
 #$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [System.Web.HttpUtility]::UrlEncode($osmap)  +'">OpenStreetMap</a>' )
 #$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [system.Web.HttpUtility]::UrlEncode($google) +'">GMap</a>' )
 
-$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $osmap +'">OpenStreetMap</a>' )
-$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $google +'">GMap</a>' )
+$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $osmap +'" target="centerside">OpenStreetMap</a>' )
+$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $google +'" target="centerside">GoogleMap</a>' )
 
 
 
