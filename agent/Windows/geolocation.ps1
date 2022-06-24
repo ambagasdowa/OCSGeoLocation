@@ -77,8 +77,10 @@ $request = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPAddress
 
 
 
-$osmap = 'https://www.openstreetmap.org/#map=13/'+$request.lat+'/'+$request.lon
-$google = 'https://www.google.com/maps/@'+ $request.lat + ',' + $request.lon +',15z'  
+#$osmap = 'https://www.openstreetmap.org/#map=13/'+$request.lat+'/'+$request.lon
+$osmap = 'https://www.openstreetmap.org/?mlat='+$request.lat+'&mlon='+$request.lon
+#$google = 'https://www.google.com/maps/@'+ $request.lat + ',' + $request.lon +',15z'  
+$google = 'https://www.google.com/maps/search/?api=1&query='+ $request.lat + ',' + $request.lon
 
 
 
