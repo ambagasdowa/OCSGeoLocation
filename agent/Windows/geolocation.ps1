@@ -74,21 +74,16 @@ $request = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPAddress
 
 
 
-
-
-
-#$osmap = 'https://www.openstreetmap.org/#map=13/'+$request.lat+'/'+$request.lon
 $osmap = 'https://www.openstreetmap.org/?mlat='+$request.lat+'&mlon='+$request.lon
-#$google = 'https://www.google.com/maps/@'+ $request.lat + ',' + $request.lon +',15z'  
 $google = 'https://www.google.com/maps/search/?api=1&query='+ $request.lat + ',' + $request.lon
 
 
-
+<a href="yourpage.htm" target="_blank" onClick="window.open('yourpage.htm','pagename','resizable,height=600,width=800'); return false;">New Page</a>
 #$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [System.Web.HttpUtility]::UrlEncode($osmap)  +'">OpenStreetMap</a>' )
 #$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [system.Web.HttpUtility]::UrlEncode($google) +'">GMap</a>' )
 
-$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $osmap +'" target="centerside">OpenStreetMap</a>' )
-$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $google +'" target="centerside">GoogleMap</a>' )
+$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $osmap +'" target="_blank" onClick="window.open('+ $osmap +',"pagename","resizable,height=800,width=600");return false">OpenStreetMap</a>' )
+$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ $google +'" target="_blank" onClick="window.open('+$google+',"pagename","resizable,height=800,width=600")">GoogleMap</a>' )
 
 
 
