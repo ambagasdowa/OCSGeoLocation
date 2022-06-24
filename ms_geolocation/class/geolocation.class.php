@@ -254,10 +254,6 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
     }
     $opt = false;
     ?>
-    <frameset cols=20%,80%>
-    <frame src="centerside.html" name="centerside">
-    </frameset>
-
 
     <div align=center>
         <div class="<?php echo $option['table_name']; ?>_top_settings" style="display:none;">
@@ -326,7 +322,6 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
         ?>
     </div>
 
-<?php  //  $this->debug($_SESSION['OCS'],'SESSION'); ?>
 
     <script>
 	 // Check all the checkboxes
@@ -436,6 +431,8 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                         for (var property in json.data) {
                             json.data[property].OSMAP = decodeHtml(json.data[property].OSMAP)
                             json.data[property].GOOGLE = decodeHtml(json.data[property].GOOGLE)
+                            json.data[property].BING = decodeHtml(json.data[property].BING)
+                            json.data[property].HERE = decodeHtml(json.data[property].HERE)
                         }
                         return json.data;
                     },
