@@ -16,6 +16,7 @@
 
   public $viewList = array(
                     'Ip'            => 'IP',
+                    'Harware_Id'=> 'HARDWARE_ID',
                     'Country'       => 'COUNTRY',
 //                    'Region'        => 'REGION',
                     'City'          => 'CITY',
@@ -427,10 +428,11 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                             $(".datatable_request").show();
                         }
 
-                       // json.data[0].IP='192.168.0.11'
-                        json.data[0].OSMAP = decodeHtml(json.data[0].OSMAP)
-                        json.data[0].GOOGLE = decodeHtml(json.data[0].GOOGLE)
 
+                        for (var property in json.data) {
+                            json.data[property].OSMAP = decodeHtml(json.data[property].OSMAP)
+                            json.data[property].GOOGLE = decodeHtml(json.data[property].GOOGLE)
+                        }
                         return json.data;
                     },
 
