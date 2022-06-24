@@ -78,7 +78,7 @@ $osmap = 'https://www.openstreetmap.org/?mlat='+$request.lat+'&mlon='+$request.l
 $google = 'https://www.google.com/maps/search/?api=1&query='+ $request.lat + ',' + $request.lon
 
 
-<a href="yourpage.htm" target="_blank" onClick="window.open('yourpage.htm','pagename','resizable,height=600,width=800'); return false;">New Page</a>
+#<a href="yourpage.htm" target="_blank" onClick="window.open('yourpage.htm','pagename','resizable,height=600,width=800'); return false;">New Page</a>
 #$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [System.Web.HttpUtility]::UrlEncode($osmap)  +'">OpenStreetMap</a>' )
 #$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [system.Web.HttpUtility]::UrlEncode($google) +'">GMap</a>' )
 
