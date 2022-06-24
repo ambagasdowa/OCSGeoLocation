@@ -4,7 +4,7 @@ OCS Inventory plugin Geolocation for windows Terminals
 
 ## Install
 
-git clone https://github.com/ambagasdowa/OCSGeoLocation.git /usr/share/ocsinventory-reports/ocsreports/extensionsi/geolocation
+sudo git clone https://github.com/ambagasdowa/OCSGeoLocation.git -b GeoLocationlinkMenu /usr/share/ocsinventory-reports/ocsreports/extensions/geolocation
 
 ### Plugin activation
 
