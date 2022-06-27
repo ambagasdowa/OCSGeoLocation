@@ -17,6 +17,7 @@
   public $viewList = array(
                     'Ip'            => 'IP',
                     'Harware_Id'=> 'HARDWARE_ID',
+                    'Hostname'=> 'HOSTNAME',
                     'Country'       => 'COUNTRY',
 //                    'Region'        => 'REGION',
                     'City'          => 'CITY',
