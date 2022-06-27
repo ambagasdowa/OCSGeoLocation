@@ -68,6 +68,11 @@ Add-Type -AssemblyName System.Web
 
 $IPAddress = (Invoke-WebRequest -uri "icanhazip.com" -UseBasicParsing).Content
 
+$hostname = hostname
+
+$linkhost = '<a href="index.php?function=computer&amp;head=1&amp;systemid=">'+$hostname +'</a>'
+
+
 #$tunnel = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter 'IPEnabled = True'
 
 $request = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPAddress"
@@ -87,6 +92,7 @@ $linkGoogle = [System.Web.HttpUtility]::HtmlEncode( $agoogle )
 
     $xml += "<GEOLOCATION>`n"
     $xml += "<IP>" + $request.query + "</IP>`n"
+    $xml += "<HOSTNAME>" + $hostname + "</HOSTNAME>`n"
     $xml += "<COUNTRY>" + $request.country + "</COUNTRY>`n"
     $xml += "<COUNTRYCODE>" + $request.countryCode + "</COUNTRYCODE>`n"
     $xml += "<REGION>" + $request.region + "</REGION>`n"
