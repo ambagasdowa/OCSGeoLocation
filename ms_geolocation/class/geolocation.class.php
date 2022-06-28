@@ -29,7 +29,8 @@
                     'OSMAP'         => 'OSMAP',
                     'Google Maps'   => 'GOOGLE',
                     'Bing Maps'     => 'BING',
-                    'Here'          => 'HERE'
+                    'Here'          => 'HERE',
+                    'Timehost'      => 'TIMEHOST'
   );
 
 

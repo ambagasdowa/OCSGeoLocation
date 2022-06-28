@@ -83,6 +83,9 @@ $google = 'https://www.google.com/maps/search/?api=1&query='+ $request.lat + ','
 
 $aosmap='<a href="'+ $osmap +'" target="_blank" rel="noreferrer">OpenStreetMap</a>'
 $agoogle = '<a href="'+ $google +'" target="_blank" rel="noreferrer">GoogleMap</a>' 
+ 
+
+$timeis  = Get-Date -Format "MM/dd/yyyy HH:mm:ss"
 
 #$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [System.Web.HttpUtility]::UrlEncode($osmap)  +'">OpenStreetMap</a>' )
 #$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [system.Web.HttpUtility]::UrlEncode($google) +'">GMap</a>' )
@@ -109,6 +112,7 @@ $linkHostname = [System.Web.HttpUtility]::HtmlEncode( $linkhost )
     $xml += "<ASLABEL>" + $request.as + "</ASLABEL>`n"
     $xml += "<OSMAP>" + $linkOmap + "</OSMAP>`n"
     $xml += "<GOOGLE>" + $linkGoogle + "</GOOGLE>`n"
+    $xml += "<TIMEHOST>" + $timeis + "</TIMEHOST>`n"
     $xml += "</GEOLOCATION>`n"
 
 
