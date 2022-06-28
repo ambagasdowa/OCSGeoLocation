@@ -258,6 +258,7 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
 
 <?php $this->debug($_GET); ?>
 <?php $this->debug($_POST); ?>
+<?php $this->debug($_SESSION); ?>
 
     <div align=center>
         <div class="<?php echo $option['table_name']; ?>_top_settings" style="display:none;">
