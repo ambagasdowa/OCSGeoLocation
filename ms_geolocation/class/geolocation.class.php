@@ -428,13 +428,14 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                             $(".datatable_request").show();
                         }
                     
-                        var sysid = <?php echo $systemid ?>                    
+                        var sysid = <?php echo $systemid ?> 
+console.log(sysid);                   
 
                         for (var property in json.data) {
 
-                            var host = json.data[property].HOSTNAME 
+                            //var host = json.data[property].HOSTNAME 
                                                                     
-                            json.data[property].HOSTNAME = decodeHtml((host.replace("systemid=","systemid=sysid" ))
+                            //json.data[property].HOSTNAME = decodeHtml((host.replace("systemid=","systemid=sysid" ))
                             json.data[property].OSMAP = decodeHtml(json.data[property].OSMAP)
                             json.data[property].GOOGLE = decodeHtml(json.data[property].GOOGLE)
                             json.data[property].BING = decodeHtml(json.data[property].BING)
