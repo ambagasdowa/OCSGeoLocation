@@ -109,7 +109,7 @@ $linkGoogle = [System.Web.HttpUtility]::HtmlEncode( $agoogle )
     $xml += "<ISP>" + $request.isp + "</ISP>`n"
     $xml += "<OSMAP>" + $linkOmap + "</OSMAP>`n"
     $xml += "<GOOGLE>" + $linkGoogle + "</GOOGLE>`n"
-    $xml += "<TIMEHOST>'" + $timeis + "'</TIMEHOST>`n"
+    $xml += "<TIMEHOST>" + $timeis + "</TIMEHOST>`n"
     $xml += "</GEOLOCATION>`n"
 
 
