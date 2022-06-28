@@ -16,8 +16,8 @@
 
   public $viewList = array(
                     'Ip'            => 'IP',
-                    'Harware_Id'=> 'HARDWARE_ID',
-                    'Hostname'=> 'HOSTNAME',
+                    'Harware_Id'    => 'HARDWARE_ID',
+                    'Hostname'      => 'HOSTNAME',
                     'Country'       => 'COUNTRY',
 //                    'Region'        => 'REGION',
                     'City'          => 'CITY',
@@ -255,10 +255,6 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
     }
     $opt = false;
     ?>
-
-
-
-
 
     <div align=center>
         <div class="<?php echo $option['table_name']; ?>_top_settings" style="display:none;">

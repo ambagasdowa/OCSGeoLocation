@@ -69,6 +69,7 @@ Add-Type -AssemblyName System.Web
 $IPAddress = (Invoke-WebRequest -uri "icanhazip.com" -UseBasicParsing).Content
 
 $namae = Invoke-Expression -Command 'hostname'
+
 #$namae = Get-CimInstance -ClassName Win32_ComputerSystem
 
 $linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+$namae +'</a>'
