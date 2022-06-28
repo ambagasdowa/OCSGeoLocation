@@ -15,9 +15,9 @@
   public $finalQuery = null;
 
   public $viewList = array(
-                    'Ip'            => 'IP',
                     'Harware_Id'    => 'HARDWARE_ID',
                     'Hostname'      => 'HOSTNAME',
+                    'Ip'            => 'IP',
                     'Country'       => 'COUNTRY',
 //                    'Region'        => 'REGION',
                     'City'          => 'CITY',
