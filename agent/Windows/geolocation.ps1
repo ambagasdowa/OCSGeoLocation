@@ -93,8 +93,8 @@ $linkHostname = [System.Web.HttpUtility]::HtmlEncode( $linkhost )
 
 
     $xml += "<GEOLOCATION>`n"
-    $xml += "<IP>" + $request.query + "</IP>`n"
     $xml += "<HOSTNAME>" + $linkHostname + "</HOSTNAME>`n"
+    $xml += "<IP>" + $request.query + "</IP>`n"
     $xml += "<COUNTRY>" + $request.country + "</COUNTRY>`n"
     $xml += "<COUNTRYCODE>" + $request.countryCode + "</COUNTRYCODE>`n"
     $xml += "<REGION>" + $request.region + "</REGION>`n"
