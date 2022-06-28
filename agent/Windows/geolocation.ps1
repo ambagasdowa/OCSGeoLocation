@@ -68,10 +68,10 @@ Add-Type -AssemblyName System.Web
 
 $IPAddress = (Invoke-WebRequest -uri "icanhazip.com" -UseBasicParsing).Content
 
-$namae = Get-CimInstance -ClassName Win32_ComputerSystem
+$namae = Invoke-Expression -Command 'hostname'
+#$namae = Get-CimInstance -ClassName Win32_ComputerSystem
 
-$linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+$namae.NAME +'</a>'
-
+$linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+$namae +'</a>'
 
 #$tunnel = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter 'IPEnabled = True'
 
