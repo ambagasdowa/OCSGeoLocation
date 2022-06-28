@@ -256,6 +256,8 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
     $opt = false;
     ?>
 
+<?php $this->debug(_SERVER); ?>
+
     <div align=center>
         <div class="<?php echo $option['table_name']; ?>_top_settings" style="display:none;">
         </div>
@@ -428,8 +430,6 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                             $(".datatable_request").show();
                         }
                     
-                        var sysid = <?php echo $systemid ?> 
-console.log(sysid);                   
 
                         for (var property in json.data) {
 
