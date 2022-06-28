@@ -72,7 +72,7 @@ $namae = Invoke-Expression -Command 'hostname'
 
 #$namae = Get-CimInstance -ClassName Win32_ComputerSystem
 
-$linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+ $namae +'</a>'
+#$linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+ $namae +'</a>'
 
 #$tunnel = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter 'IPEnabled = True'
 
@@ -84,7 +84,6 @@ $google = 'https://www.google.com/maps/search/?api=1&query='+ $request.lat + ','
 $aosmap='<a href="'+ $osmap +'" target="_blank" rel="noreferrer">OpenStreetMap</a>'
 $agoogle = '<a href="'+ $google +'" target="_blank" rel="noreferrer">GoogleMap</a>' 
  
-
 $timeis  = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 #$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [System.Web.HttpUtility]::UrlEncode($osmap)  +'">OpenStreetMap</a>' )
@@ -92,11 +91,11 @@ $timeis  = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 $linkOmap = [System.Web.HttpUtility]::HtmlEncode( $aosmap )
 $linkGoogle = [System.Web.HttpUtility]::HtmlEncode( $agoogle )
-$linkHostname = [System.Web.HttpUtility]::HtmlEncode( $linkhost )
+#$linkHostname = [System.Web.HttpUtility]::HtmlEncode( $linkhost )
 
 
     $xml += "<GEOLOCATION>`n"
-    $xml += "<HOSTNAME>" + $linkHostname + "</HOSTNAME>`n"
+    $xml += "<HOSTNAME>" + $namae + "</HOSTNAME>`n"
     $xml += "<IP>" + $request.query + "</IP>`n"
     $xml += "<COUNTRY>" + $request.country + "</COUNTRY>`n"
     $xml += "<COUNTRYCODE>" + $request.countryCode + "</COUNTRYCODE>`n"
