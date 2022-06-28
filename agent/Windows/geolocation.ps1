@@ -72,7 +72,7 @@ $namae = Invoke-Expression -Command 'hostname'
 
 #$namae = Get-CimInstance -ClassName Win32_ComputerSystem
 
-$linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+$namae +'</a>'
+$linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+ $namae +'</a>'
 
 #$tunnel = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter 'IPEnabled = True'
 
