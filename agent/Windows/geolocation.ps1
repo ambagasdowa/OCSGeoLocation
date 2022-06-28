@@ -85,7 +85,7 @@ $aosmap='<a href="'+ $osmap +'" target="_blank" rel="noreferrer">OpenStreetMap</
 $agoogle = '<a href="'+ $google +'" target="_blank" rel="noreferrer">GoogleMap</a>' 
  
 
-$timeis  = Get-Date -Format "MM/dd/yyyy HH:mm:ss"
+$timeis  = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 #$linkOmap = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [System.Web.HttpUtility]::UrlEncode($osmap)  +'">OpenStreetMap</a>' )
 #$linkGoogle = [System.Web.HttpUtility]::HtmlEncode( '<a href="'+ [system.Web.HttpUtility]::UrlEncode($google) +'">GMap</a>' )
