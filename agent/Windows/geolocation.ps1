@@ -73,6 +73,7 @@ $namae = Invoke-Expression -Command 'hostname'
 #$namae = Get-CimInstance -ClassName Win32_ComputerSystem
 #$linkhost = '<a href="index.php?function=computer&head=1&systemid=">'+ $namae +'</a>'
 #$tunnel = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter 'IPEnabled = True'
+
 $request = Invoke-RestMethod -Method Get -Uri "http://ip-api.com/json/$IPAddress"
 
 $osmap = 'https://www.openstreetmap.org/?mlat='+$request.lat+'&mlon='+$request.lon
@@ -106,6 +107,7 @@ $linkGoogle = [System.Web.HttpUtility]::HtmlEncode( $agoogle )
     $xml += "<ISP>" + $request.isp + "</ISP>`n"
     $xml += "<OSMAP>" + $linkOmap + "</OSMAP>`n"
     $xml += "<GOOGLE>" + $linkGoogle + "</GOOGLE>`n"
+    $xml += "<TIMEHOST>" + $timeis + "</TIMEHOST>`n"
     $xml += "</GEOLOCATION>`n"
 
 

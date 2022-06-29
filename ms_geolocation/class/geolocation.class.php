@@ -30,7 +30,8 @@
                     'Google Maps'   => 'GOOGLE',
                     'Bing Maps'     => 'BING',
                     'Here'          => 'HERE',
-                    'Created'      => 'CREATED'
+                    'Timehost'      => 'TIMEHOST',
+                    'Created'       => 'CREATED'
   );
 
 
