@@ -93,7 +93,7 @@ $linkGoogle = [System.Web.HttpUtility]::HtmlEncode( $agoogle )
 
 
     $xml += "<GEOLOCATION>`n"
-    $xml += "<HOSTNAME>" + $namae + "</HOSTNAME>`n"
+    $xml += "<CLIENT>" + $namae + "</CLIENT>`n"
     $xml += "<IP>" + $request.query + "</IP>`n"
     $xml += "<COUNTRY>" + $request.country + "</COUNTRY>`n"
     $xml += "<COUNTRYCODE>" + $request.countryCode + "</COUNTRYCODE>`n"

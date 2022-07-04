@@ -16,7 +16,7 @@
 
   public $viewList = array(
                     'Harware_Id'    => 'HARDWARE_ID',
-                    'Hostname'      => 'HOSTNAME',
+                    'Hostname'      => 'CLIENT',
                     'Ip'            => 'IP',
                     'Country'       => 'COUNTRY',
 //                    'Region'        => 'REGION',
