@@ -22,8 +22,7 @@ $DATA_MAP{geolocation} = {
    writeDiff => 0,
    cache => 0,
    fields => {
-               'ID' => {},
-               'HARDWARE_ID' => {},
+
                'CLIENT' => {},
                'IP' => {},
                'PHONE' => {},
@@ -47,8 +46,7 @@ $DATA_MAP{geolocation} = {
                'HERE' => {},
                'SERVER_ONE' => {},
                'SERVER_TWO' => {},
-               'CREATED' => {},
-               'TIMEHOST' => {},
+               'TIMEHOST' => {}
 
    }
 };
