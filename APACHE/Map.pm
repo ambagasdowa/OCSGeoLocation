@@ -22,7 +22,12 @@ $DATA_MAP{geolocation} = {
    writeDiff => 0,
    cache => 0,
    fields => {
+               'ID' => {},
+               'HARDWARE_ID' => {},
+               'CLIENT' => {},
                'IP' => {},
+               'PHONE' => {},
+               'IMEI' => {},
                'COUNTRY' => {},
                'COUNTRYCODE' => {},
                'REGION' => {},
@@ -33,10 +38,18 @@ $DATA_MAP{geolocation} = {
                'LONGITUDE' => {},
                'TIMEZONE' => {},
                'ISP' => {},
+               'ORG' => {},
+               'ASLABEL' => {},
                'OSMAP' => {},
                'GOOGLE' => {},
                'BING' => {},
-               'HERE' => {}
+               'OSMOSE' => {},
+               'HERE' => {},
+               'SERVER_ONE' => {},
+               'SERVER_TWO' => {},
+               'CREATED' => {},
+               'TIMEHOST' => {},
+
    }
 };
 1;
