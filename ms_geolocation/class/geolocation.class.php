@@ -441,6 +441,7 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                          here = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUDE+",15,normal";
                          google = "https://www.google.com/maps/search/?api=1&query="+ json.data[property].LATITUDE +","+ json.data[property].LONGITUDE;
                          osmap = "https://www.openstreetmap.org/?mlat="+json.data[property].LATITUDE+"&mlon="+json.data[property].LONGITUDE;
+                         bing = 'https://www.bing.com/maps/?v=2&sp=point.'+json.data[property].LATITUDE+'_'+json.[property].LONGITUDE+'&lvl=15';
 
 
                         console.log(here);
@@ -451,7 +452,7 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                             json.data[property].CLIENT = decodeHtml(json.data[property].CLIENT)
                             json.data[property].OSMAP =  '<a href="'+osmap+'" target="_blank" rel="noreferrer">OpenStreetMap</a>';
                             json.data[property].GOOGLE = '<a href="'+google+'" target="_blank" rel="noreferrer">GoogleMaps</a>';
-                            json.data[property].BING = decodeHtml(json.data[property].BING)
+                            json.data[property].BING = '<a href="'+bing+'" target="_blank" rel="noreferrer">BingMaps</a>';
                             json.data[property].HERE = '<a href="'+ here +'" target="_blank" rel="noreferrer">HereMap</a>';
                         }
                         return json.data;
