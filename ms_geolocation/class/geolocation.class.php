@@ -434,7 +434,7 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
 //    url = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUD+",15,normal"
 //    anchor = '<a href="'+ url +'">HereMap</a>'
 
-
+console.log(json.data);
 
                         for (var property in json.data) {
 
