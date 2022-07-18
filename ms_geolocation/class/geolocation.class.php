@@ -443,6 +443,11 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                          osmap = "https://www.openstreetmap.org/?mlat="+json.data[property].LATITUDE+"&mlon="+json.data[property].LONGITUDE+'"';
 
 
+                        console.log(here);
+                        console.log(google);
+                        console.log(osmap);
+
+
                             json.data[property].CLIENT = decodeHtml(json.data[property].CLIENT)
                             json.data[property].OSMAP =  '<a href="'+osmap+'" target="_blank" rel="noreferrer>OpenStreetMap</a>';
                             json.data[property].GOOGLE = '<a href="'+google+'" target="_blank" rel="noreferrer>GoogleMaps</a>';
