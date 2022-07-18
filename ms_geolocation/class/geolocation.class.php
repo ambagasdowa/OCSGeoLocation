@@ -438,7 +438,7 @@ console.log(json.data);
 
                         for (var property in json.data) {
 
-                         here = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUD+",15,normal";
+                         here = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUDE+",15,normal";
 console.log(here);
 
                             json.data[property].HOSTNAME = decodeHtml(json.data[property].HOSTNAME)
