@@ -445,7 +445,7 @@ console.log(property);
                             json.data[property].OSMAP = decodeHtml(json.data[property].OSMAP)
                             json.data[property].GOOGLE = decodeHtml(json.data[property].GOOGLE)
                             json.data[property].BING = decodeHtml(json.data[property].BING)
-                            json.data[property].HERE = '<a href="'+ url +'">HereMap</a>';
+                         //   json.data[property].HERE = '<a href="'+ url +'">HereMap</a>';
                         }
                         return json.data;
                     },
