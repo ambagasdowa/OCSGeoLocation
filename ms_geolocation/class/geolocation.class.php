@@ -19,9 +19,9 @@
                     'Hostname'      => 'CLIENT',
                     'Ip'            => 'IP',
                     'Country'       => 'COUNTRY',
-//                    'Region'        => 'REGION',
+                    'Address'        => 'ADDRESS',
                     'City'          => 'CITY',
-                    'ZipCode'       => 'ZIP',
+                    'ZipCode'       => 'ZIPCODE',
                     'Latitude'      => 'LATITUDE',
                     'Longitude'     => 'LONGITUDE',
 //                    'Timezone'      => 'TIMEZONE',
@@ -80,7 +80,7 @@
 
     if($result != false){
       while($row = $result->fetch_assoc()){
-        if($row['Field'] != "HARDWARE_ID"){
+//        if($row['Field'] != "HARDWARE_ID"){
 // note if viewList is defined then cath em 
            if(isset($this->viewList)){
                if(in_array($row['Field'],$this->viewList)){
@@ -90,7 +90,7 @@
                     $this->fieldArray[] = $row['Field'];
            }
 
-        }
+//        }
       }
 
       return true;
@@ -443,10 +443,6 @@ console.log(json.data);
                          osmap = "https://www.openstreetmap.org/?mlat="+json.data[property].LATITUDE+"&mlon="+json.data[property].LONGITUDE;
                          bing = 'https://www.bing.com/maps/?v=2&sp=point.'+json.data[property].LATITUDE+'_'+json.data[property].LONGITUDE+'_DispositivoGst&lvl=14';
 
-
-                        console.log(here);
-                        console.log(google);
-                        console.log(osmap);
 
 
                             json.data[property].CLIENT = decodeHtml(json.data[property].CLIENT)
