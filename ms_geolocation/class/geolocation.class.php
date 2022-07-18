@@ -431,12 +431,21 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                         }
 
 
+//    url = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUD+",15,normal"
+//    anchor = '<a href="'+ url +'">HereMap</a>'
+
+
+
                         for (var property in json.data) {
+
+                         here = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUD+",15,normal"
+
+
                             json.data[property].HOSTNAME = decodeHtml(json.data[property].HOSTNAME)
                             json.data[property].OSMAP = decodeHtml(json.data[property].OSMAP)
                             json.data[property].GOOGLE = decodeHtml(json.data[property].GOOGLE)
                             json.data[property].BING = decodeHtml(json.data[property].BING)
-                            json.data[property].HERE = decodeHtml(json.data[property].HERE)
+                            json.data[property].HERE = '<a href="'+ url +'">HereMap</a>'
                         }
                         return json.data;
                     },
