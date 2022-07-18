@@ -22,15 +22,15 @@
 //                    'Region'        => 'REGION',
                     'City'          => 'CITY',
                     'ZipCode'       => 'ZIP',
-//                    'Latitude'      => 'LATITUDE',
-//                    'Longitude'     => 'LONGITUDE',
-                    'Timezone'      => 'TIMEZONE',
+                    'Latitude'      => 'LATITUDE',
+                    'Longitude'     => 'LONGITUDE',
+//                    'Timezone'      => 'TIMEZONE',
                     'ISP'           => 'ISP',
                     'OSMAP'         => 'OSMAP',
                     'Google Maps'   => 'GOOGLE',
                     'Bing Maps'     => 'BING',
                     'Here'          => 'HERE',
-                    'Timehost'      => 'TIMEHOST',
+//                    'Timehost'      => 'TIMEHOST',
                     'Created'       => 'CREATED'
   );
 
