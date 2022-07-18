@@ -434,14 +434,14 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
 //    url = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUD+",15,normal"
 //    anchor = '<a href="'+ url +'">HereMap</a>'
 
-//console.log(json.data);
+console.log(json.data);
 
                         for (var property in json.data) {
 
                          here = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUDE+",15,normal";
                          google = "https://www.google.com/maps/search/?api=1&query="+ json.data[property].LATITUDE +","+ json.data[property].LONGITUDE;
                          osmap = "https://www.openstreetmap.org/?mlat="+json.data[property].LATITUDE+"&mlon="+json.data[property].LONGITUDE;
-                         bing = 'https://www.bing.com/maps/?v=2&sp=point.'+json.data[property].LATITUDE+'_'+json.data[property].LONGITUDE+'_UbicacionActual&lvl=12';
+                         bing = 'https://www.bing.com/maps/?v=2&sp=point.'+json.data[property].LATITUDE+'_'+json.data[property].LONGITUDE+'_DispositivoGst&lvl=14';
 
 
                         console.log(here);
