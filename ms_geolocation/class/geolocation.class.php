@@ -438,16 +438,16 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
 
                         for (var property in json.data) {
 
-                         here = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUDE+",15,normal";
-                         google = "https://www.google.com/maps/search/?api=1&query="+ json.data[property].LATITUDE +","+ json.data[property].LONGITUDE+'"';
-                         osmap = "https://www.openstreetmap.org/?mlat="+json.data[property].LATITUDE+"&mlon="+json.data[property].LONGITUDE+'"';
+                         here.[property] = "https://wego.here.com/location?map="+json.data[property].LATITUDE+","+json.data[property].LONGITUDE+",15,normal";
+                         google.[property]= "https://www.google.com/maps/search/?api=1&query="+ json.data[property].LATITUDE +","+ json.data[property].LONGITUDE+'"';
+                         osmap.[property]= "https://www.openstreetmap.org/?mlat="+json.data[property].LATITUDE+"&mlon="+json.data[property].LONGITUDE+'"';
 
 
                             json.data[property].CLIENT = decodeHtml(json.data[property].CLIENT)
-                            json.data[property].OSMAP =  '<a href="'+osmap+'" target="_blank" rel="noreferrer>OpenStreetMap</a>';
-                            json.data[property].GOOGLE = '<a href="'+google+'" target="_blank" rel="noreferrer>GoogleMaps</a>';
+                            json.data[property].OSMAP =  '<a href="'+osmap.[property]+'" target="_blank" rel="noreferrer>OpenStreetMap</a>';
+                            json.data[property].GOOGLE = '<a href="'+google.[property]+'" target="_blank" rel="noreferrer>GoogleMaps</a>';
                             json.data[property].BING = decodeHtml(json.data[property].BING)
-                            json.data[property].HERE = '<a href="'+ here +'" target="_blank" rel="noreferrer">HereMap</a>';
+                            json.data[property].HERE = '<a href="'+ here.[property] +'" target="_blank" rel="noreferrer">HereMap</a>';
                         }
                         return json.data;
                     },
