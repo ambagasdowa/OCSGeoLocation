@@ -52,7 +52,7 @@ if (!isset($protectedPost['SHOW'])) {
 
  $details->debug($list_fields,'LIST_FIELDS');
 
- $tableDetails = $details->displayBody($list_fields);
+ $tableDetails = $details->displayBody($details->$listFieldsColums);
 
 
  $details->debug($tableDetails,'TABLEDETAILS');

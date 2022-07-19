@@ -35,6 +35,24 @@
   );
 
 
+  public $listFieldsColums = array(
+//                    'Harware_Id'    => 'HARDWARE_ID',
+                    'Hostname'      => 'CLIENT',
+                    'Ip'            => 'IP',
+                    'Country'       => 'COUNTRY',
+                    'Address'        => 'ADDRESS',
+                    'City'          => 'CITY',
+                    'ZipCode'       => 'ZIPCODE',
+//                    'Latitude'      => 'LATITUDE',
+//                    'Longitude'     => 'LONGITUDE',
+                    'ISP'           => 'ISP',
+                    'OSMAP'         => 'OSMAP',
+                    'Google Maps'   => 'GOOGLE',
+                    'Bing Maps'     => 'BING',
+                    'Here'          => 'HERE',
+//                    'Created'       => 'CREATED'
+  );
+
 
 
 
