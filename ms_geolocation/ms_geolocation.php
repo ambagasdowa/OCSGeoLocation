@@ -41,7 +41,7 @@ if (!isset($protectedPost['SHOW'])) {
                     'Hostname'      => 'CLIENT',
                     'Ip'            => 'IP',
                     'Country'       => 'COUNTRY',
-                    'Address'        => 'ADDRESS',
+                    'Address'       => 'ADDRESS',
                     'City'          => 'CITY',
                     'ZipCode'       => 'ZIPCODE',
 //                    'Latitude'      => 'LATITUDE',
@@ -51,7 +51,7 @@ if (!isset($protectedPost['SHOW'])) {
                     'Google Maps'   => 'GOOGLE',
                     'Bing Maps'     => 'BING',
                     'Here'          => 'HERE',
-//                    'Created'       => 'CREATED'
+                    'LastUpdate'    => 'CREATED'
   );
 
 
