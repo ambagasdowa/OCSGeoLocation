@@ -91,7 +91,7 @@ if (!isset($protectedPost['SHOW'])) {
 
  echo "<div class='col-md-12'>";
  echo open_form($tabOptions['table_name'], '', '', 'form-horizontal');
- $details->ajaxtab_entete_fixe_($tableDetails['listFields'], $tableDetails['defaultFields'], $tabOptions,  $tableDetails['listColCantDel']);
+ $details->ajaxtab_entete_fixe_($tableDetails['listFields'], $listFieldsColums, $tabOptions,  $tableDetails['listColCantDel']);
  echo close_form();
  echo "</div>";
 
