@@ -398,12 +398,18 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                             document.getElementById('checkboxALL').checked = false;
                         }
                         $.each(d.columns, function (index, value) {
+
 console.log(this['data']);
+
+
+                        if(this['data']!=='HARDWARE_ID' OR this['data'] !== 'LATITUDE' OR this['data'] !== 'LONGITUDE'){
+
                             var col = "." + this['data'];
                             if ($(table_id).DataTable().column(col).visible()) {
                                 visible.push(index);
                             }
-                        });
+                        }
+});
                         var ocs = [];
                         //Add the actual $_POST to the $_POST of the ajax request
 						<?php
