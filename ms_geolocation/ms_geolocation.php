@@ -81,6 +81,7 @@ if (!isset($protectedPost['SHOW'])) {
 */ 
  $tableDetails = $details->displayBody($list_fields);
 
+ $tableDetails['listFields'] = $listFieldsColums;
  $tableDetails['defaultFields'] = $listFieldsColums;
  $tableDetails['listColCantDel'] = $listFieldsColums;
 
