@@ -85,8 +85,8 @@ if (!isset($protectedPost['SHOW'])) {
  $tableDetails['defaultFields'] = $listFieldsColums;
  $tableDetails['listColCantDel'] = $listFieldsColums;
 
- $details->debug($tableDetails);
- $details->debug($listFieldsColums);
+// $details->debug($tableDetails);
+// $details->debug($listFieldsColums);
 
 
  $tabOptions['table_name'] = $tableDetails['tabOptions']['table_name'];
