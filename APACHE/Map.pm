@@ -40,13 +40,13 @@ $DATA_MAP{geolocation} = {
                'ISP' => {},
                'ORG' => {},
                'ASLABEL' => {},
-               'OSMAP' => {},
-               'GOOGLE' => {},
-               'BING' => {},
-               'OSMOSE' => {},
-               'HERE' => {},
-               'SERVER_ONE' => {},
-               'SERVER_TWO' => {},
+               #               'OSMAP' => {},
+               #               'GOOGLE' => {},
+               #               'BING' => {},
+               #               'OSMOSE' => {},
+               #               'HERE' => {},
+               #               'SERVER_ONE' => {},
+               #               'SERVER_TWO' => {},
                'TIMEHOST' => {}
 
    }
