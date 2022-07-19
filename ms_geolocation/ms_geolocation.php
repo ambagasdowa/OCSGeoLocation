@@ -100,7 +100,7 @@ if (!isset($protectedPost['SHOW'])) {
  if (AJAX) {
   ob_end_clean();
 //  tab_req($tableDetails['listFields'], $tableDetails['defaultFields'], $tableDetails['listColCantDel'], $details->finalQuery, $tabOptions);
-  tab_req($tableDetails['listFields'], $listFieldsColums, $tableDetails['listColCantDel'], $details->finalQuery, $tabOptions);
+  tab_req($tableDetails['listFields'], $listFieldsColums, $listFieldsColums, $details->finalQuery, $tabOptions);
   ob_start();
  }
 
