@@ -49,10 +49,13 @@ if (!isset($protectedPost['SHOW'])) {
 // $tableDetails = $details->processTable($activeMenu);
 //
 */ 
+
+ $details->debug($list_fields);
+
  $tableDetails = $details->displayBody($list_fields);
 
 
-// $details->debug($tableDetails);
+ $details->debug($tableDetails);
 
 
  $tabOptions['table_name'] = $tableDetails['tabOptions']['table_name'];
