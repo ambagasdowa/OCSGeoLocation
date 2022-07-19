@@ -398,6 +398,7 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
                             document.getElementById('checkboxALL').checked = false;
                         }
                         $.each(d.columns, function (index, value) {
+console.log(this['data']);
                             var col = "." + this['data'];
                             if ($(table_id).DataTable().column(col).visible()) {
                                 visible.push(index);
