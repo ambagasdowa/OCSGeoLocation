@@ -36,6 +36,36 @@ if (!isset($protectedPost['SHOW'])) {
 
 
 
+  $listFieldsColums = array(
+//                    'Harware_Id'    => 'HARDWARE_ID',
+                    'Hostname'      => 'CLIENT',
+                    'Ip'            => 'IP',
+                    'Country'       => 'COUNTRY',
+                    'Address'        => 'ADDRESS',
+                    'City'          => 'CITY',
+                    'ZipCode'       => 'ZIPCODE',
+//                    'Latitude'      => 'LATITUDE',
+//                    'Longitude'     => 'LONGITUDE',
+                    'ISP'           => 'ISP',
+                    'OSMAP'         => 'OSMAP',
+                    'Google Maps'   => 'GOOGLE',
+                    'Bing Maps'     => 'BING',
+                    'Here'          => 'HERE',
+//                    'Created'       => 'CREATED'
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 // echo "<div class='col-md-2'>";
 // $details->showVcenterLeftMenu($activeMenu);
@@ -52,8 +82,8 @@ if (!isset($protectedPost['SHOW'])) {
  $tableDetails = $details->displayBody($list_fields);
 
 
-// $details->debug($tableDetails);
- $details->debug($details->$listFieldsColums);
+ $details->debug($tableDetails);
+ $details->debug($listFieldsColums);
 
 
  $tabOptions['table_name'] = $tableDetails['tabOptions']['table_name'];
