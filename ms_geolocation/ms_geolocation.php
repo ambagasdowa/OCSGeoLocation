@@ -81,6 +81,7 @@ if (!isset($protectedPost['SHOW'])) {
 */ 
  $tableDetails = $details->displayBody($list_fields);
 
+ $tableDetails['defaultFields'] = $listFieldsColums;
 
  $details->debug($tableDetails);
  $details->debug($listFieldsColums);
@@ -99,8 +100,7 @@ if (!isset($protectedPost['SHOW'])) {
  
  if (AJAX) {
   ob_end_clean();
-//  tab_req($tableDetails['listFields'], $tableDetails['defaultFields'], $tableDetails['listColCantDel'], $details->finalQuery, $tabOptions);
-  tab_req($tableDetails['listFields'], $listFieldsColums, $listFieldsColums, $details->finalQuery, $tabOptions);
+  tab_req($tableDetails['listFields'], $tableDetails['defaultFields'], $tableDetails['listColCantDel'], $details->finalQuery, $tabOptions);
   ob_start();
  }
 
