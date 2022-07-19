@@ -49,13 +49,11 @@ if (!isset($protectedPost['SHOW'])) {
 // $tableDetails = $details->processTable($activeMenu);
 //
 */ 
-
- $details->debug($details->$listFieldsColums,'LIST_FIELDS');
-
- $tableDetails = $details->displayBody($details->$listFieldsColums);
+ $tableDetails = $details->displayBody($list_fields);
 
 
- $details->debug($tableDetails,'TABLEDETAILS');
+// $details->debug($tableDetails);
+ $details->debug($details->$listFieldsColums);
 
 
  $tabOptions['table_name'] = $tableDetails['tabOptions']['table_name'];
@@ -63,7 +61,7 @@ if (!isset($protectedPost['SHOW'])) {
 
  echo "<div class='col-md-12'>";
  echo open_form($tabOptions['table_name'], '', '', 'form-horizontal');
- $details->ajaxtab_entete_fixe_($tableDetails['listFields'], $details->$listFieldsColums, $tabOptions,  $tableDetails['listColCantDel']);
+ $details->ajaxtab_entete_fixe_($tableDetails['listFields'], $tableDetails['defaultFields'], $tabOptions,  $tableDetails['listColCantDel']);
  echo close_form();
  echo "</div>";
 
