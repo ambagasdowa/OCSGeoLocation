@@ -50,12 +50,12 @@ if (!isset($protectedPost['SHOW'])) {
 //
 */ 
 
- $details->debug($list_fields);
+ $details->debug($list_fields,'LIST_FIELDS');
 
  $tableDetails = $details->displayBody($list_fields);
 
 
- $details->debug($tableDetails);
+ $details->debug($tableDetails,'TABLEDETAILS');
 
 
  $tabOptions['table_name'] = $tableDetails['tabOptions']['table_name'];
