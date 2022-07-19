@@ -91,7 +91,7 @@ if (!isset($protectedPost['SHOW'])) {
 
  echo "<div class='col-md-12'>";
  echo open_form($tabOptions['table_name'], '', '', 'form-horizontal');
- $details->ajaxtab_entete_fixe_($tableDetails['listFields'], $listFieldsColums, $tabOptions,  $tableDetails['listColCantDel']);
+ $details->ajaxtab_entete_fixe_($tableDetails['listFields'], $tableDetails['defaultFields'], $tabOptions,  $tableDetails['listColCantDel']);
  echo close_form();
  echo "</div>";
 
@@ -99,7 +99,8 @@ if (!isset($protectedPost['SHOW'])) {
  
  if (AJAX) {
   ob_end_clean();
-  tab_req($tableDetails['listFields'], $tableDetails['defaultFields'], $tableDetails['listColCantDel'], $details->finalQuery, $tabOptions);
+//  tab_req($tableDetails['listFields'], $tableDetails['defaultFields'], $tableDetails['listColCantDel'], $details->finalQuery, $tabOptions);
+  tab_req($tableDetails['listFields'], $listFieldsColums, $tableDetails['listColCantDel'], $details->finalQuery, $tabOptions);
   ob_start();
  }
 
