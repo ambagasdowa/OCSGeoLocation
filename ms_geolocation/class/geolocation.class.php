@@ -402,7 +402,7 @@ public function ajaxtab_entete_fixe_($columns, $default_fields, $option = array(
 console.log(this['data']);
 
 
-                        if(this['data']!=='HARDWARE_ID' OR this['data'] !== 'LATITUDE' OR this['data'] !== 'LONGITUDE'){
+                        if(this['data']!='HARDWARE_ID'){
 
                             var col = "." + this['data'];
                             if ($(table_id).DataTable().column(col).visible()) {
